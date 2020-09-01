@@ -1,11 +1,6 @@
-- hosts: localhost
-  connection: local
-  become: true
-
-  tasks:
-  - name: Install packages
-    apt:
-      name:
-        - htop
-        - mc
-        - tmux
+- name: Install packages
+  apt:
+    name:
+      - htop
+      - mc
+      - tmux
